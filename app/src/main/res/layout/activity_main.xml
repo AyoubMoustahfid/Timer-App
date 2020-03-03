@@ -8,80 +8,69 @@
     android:background="#211D44"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/bgcircle"
-        android:layout_width="276dp"
-        android:layout_height="247dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/bgcircle"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
 
     <ImageView
-        android:id="@+id/icanchor"
-        android:layout_width="358dp"
-        android:layout_height="357dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:id="@+id/ivSplash"
+        android:layout_width="380dp"
+        android:layout_height="390dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginTop="0dp"
-        android:src="@drawable/icanchor"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/icget"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <Chronometer
-        android:id="@+id/timerHere"
+
+    <TextView
+        android:id="@+id/tvSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Heathly On You"
         android:textColor="#fff"
-        android:textSize="62sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bgcircle" />
+        app:layout_constraintTop_toBottomOf="@+id/ivSplash"/>
+
+
+    <TextView
+        android:id="@+id/tvSubSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text=" Key of happiness is not a \n life for monney"
+        android:textAlignment="center"
+        android:textColor="#A3A2AD"
+        android:lineSpacingExtra="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSplash"/>
 
     <Button
-        android:id="@+id/btnstart"
+        android:id="@+id/btnget"
         android:layout_width="280dp"
         android:layout_height="55dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/bgbtngreen"
-        android:text="Start Now"
+        android:layout_marginStart="8dp"
+        android:text="Get Started"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnstop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
-    <Button
-        android:id="@+id/btnstop"
-        android:layout_width="280dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="44dp"
-        android:background="@drawable/btnred"
-        android:text="Stop Now"
-        android:textAllCaps="false"
-        android:textColor="#AF3555"
+        android:background="@drawable/bgbtngreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
 
 </android.support.constraint.ConstraintLayout>
